@@ -1,0 +1,40 @@
+p {
+    color: red;
+}
+
+#id1 {
+    color: blue;
+}
+
+p.classe1 {
+    color: lightcoral;
+}
+
+.classe1 {
+    color: green;
+}
+
+.classe1 {color: yellow;}
+.classe2 {color: lightblue;}
+
+p {
+    color: lightgreen !important;
+}
+
+/* 
+
+0 0 0 0 
+
+inline 1 X X X
+
+0 X X X 
+
+nb id
+
+nb classes
+
+nb balises
+
+
+
+*/

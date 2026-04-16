@@ -1,0 +1,18 @@
+/* @import url('./root.css'); */
+
+:root {
+    --title-color: blue;
+    --font-size: 48px;
+}
+
+
+
+h1 {
+    color: var(--title-color);
+    font-size: var(--font-size);
+}
+
+h2 {
+    color: var(--title-color);
+    font-size: var(--font-size);
+}

@@ -1,0 +1,6 @@
+.debug * { box-shadow: 0 0 0 2px hsla(0, 100%, 50%, 0.5); }
+.debug * * { box-shadow: 0 0 0 2px hsla(120, 100%, 50%, 0.5); }
+.debug * * * { box-shadow: 0 0 0 2px hsla(180, 100%, 50%, 0.5); }
+.debug * * * * { box-shadow: 0 0 0 2px hsla(240, 100%, 50%, 0.5); }
+.debug * * * * * { box-shadow: 0 0 0 2px hsla(300, 100%, 50%, 0.5); }
+.debug * * * * * * { box-shadow: 0 0 0 2px hsla(60, 100%, 50%, 0.5); }

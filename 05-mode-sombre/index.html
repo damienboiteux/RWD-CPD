@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mode sombre</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Dark mode / Light mode</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="card">
+        <h2>Card</h2>
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+    <button id="toggle-theme">Changer de thème</button>
+
+    <script>
+        const sysTheme = window.matchMedia(('prefers-color-scheme: dark'));
+        document.body.setAttribute('data-theme', sysTheme.matches ? 'dark' : 'light');
+
+
+        const btn = document.getElementById('toggle-theme');
+        btn.addEventListener('click', ()=>{
+            const currentTheme = document.body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.body.setAttribute('data-theme', newTheme);
+        })
+
+    </script>
+</body>
+</html> 

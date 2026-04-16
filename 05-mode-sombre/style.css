@@ -1,0 +1,31 @@
+:root {
+    --bg: #f0f0f0;
+    --color: #333;
+    --border: 1px solid #888;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #333;
+        --color: #f0f0f0;
+        --border: #888;
+    }
+} */
+
+[data-theme="dark"] {
+    --bg: #333;
+    --color: #f0f0f0;
+    --border: 1px solid #888;
+}
+
+
+
+
+body {
+    background-color: var(--bg);
+    color: var(--color);
+}
+
+.card {
+    border: var(--border);
+}

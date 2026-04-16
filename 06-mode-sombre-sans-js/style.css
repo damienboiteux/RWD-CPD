@@ -1,0 +1,43 @@
+.toggle-theme { display: none;}
+
+.page {
+    --bg: #fff;
+    --text: #000;
+}
+
+ .toggle-theme:checked + .page {
+    --bg: #000;
+    --text: #fff;
+ }
+
+
+.label-sombre, 
+.label-clair {
+    display: none;
+}
+
+.toggle-theme + .page .label-sombre {
+    display: inline;
+}
+
+.toggle-theme:checked + .page .label-clair {
+    display: inline;
+ }
+
+ .toggle-theme:checked + .page .label-sombre {
+    display: none;
+ }
+
+
+ .page {
+    background-color: var(--bg);
+ }
+
+ p, .card, label {
+    color: var(--text);
+ }
+
+.fa-regular {
+   font-size: 2rem;
+   color: red; 
+}
