@@ -1,0 +1,76 @@
+@import url('../01-debug/style.css');
+
+:root {
+    --marge : 48px;
+    --gutter: 12px;
+    --columns: 6;
+
+}
+
+body {
+    padding: 0 var(--marge);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+}
+
+.col {
+    --one-col: calc(  ( 100%  - ((var(--columns) - 1 ) * (var(--gutter)))  ) / var(--columns));
+    
+    flex: 0 0 calc( var(--one-col) * var(--span) + var(--gutter) * (var(--span) - 1));
+
+    margin-left: calc(
+        var(--offset) * (var(--one-col) + var(--gutter))
+    );
+}
+
+.col-sm-1 { --span: 1; }
+.col-sm-2 { --span: 2; }
+.col-sm-3 { --span: 3; }
+.col-sm-4 { --span: 4; }
+.col-sm-5 { --span: 5; }
+.col-sm-6 { --span: 6; }
+
+.offset-sm-1 {--offset: 1;}
+.offset-sm-2 {--offset: 2;}
+.offset-sm-3 {--offset: 3;}
+.offset-sm-4 {--offset: 4;}
+.offset-sm-5 {--offset: 5;}
+.offset-sm-6 {--offset: 6;}
+
+
+
+
+/* 
+
+largeur d'une colonne : 
+
+( toute la largeur - les marges latérales - 11 * largeur d'une goutière)  / nombre de colonnes
+    (    100%       -  2 * marge latérale  - 11 * largeur d'une gouttière )    /    12
+
+*/
+
+/* Tablette */
+@media (min-width: 768px) {
+    /* body { background-color: lightblue; } */
+    .col-md-1 { --span: 1; }
+    .col-md-2 { --span: 2; }
+    .col-md-3 { --span: 3; }
+    .col-md-4 { --span: 4; }
+    .col-md-5 { --span: 5; }
+    .col-md-6 { --span: 6; }
+}
+
+/* Desktop */
+@media (min-width: 960px) {
+    /* body { background-color: lightgreen; } */
+    .col-lg-1 { --span: 1; }
+    .col-lg-2 { --span: 2; }
+    .col-lg-3 { --span: 3; }
+    .col-lg-4 { --span: 4; }
+    .col-lg-5 { --span: 5; }
+    .col-lg-6 { --span: 6; }
+}
