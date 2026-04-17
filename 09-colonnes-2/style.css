@@ -4,12 +4,19 @@
     --marge : 48px;
     --gutter: 12px;
     --columns: 6;
-
+    --container-max-width: 500px;
 }
 
-body {
-    padding: 0 var(--marge);
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
 }
+
+.container-fluid {
+    width: 100%;
+}
+
+
 
 .row {
     display: flex;
@@ -55,6 +62,10 @@ largeur d'une colonne :
 
 /* Tablette */
 @media (min-width: 768px) {
+    :root {
+        --container-max-width: 800px;
+        --columns: 8;
+    }
     /* body { background-color: lightblue; } */
     .col-md-1 { --span: 1; }
     .col-md-2 { --span: 2; }
@@ -62,10 +73,16 @@ largeur d'une colonne :
     .col-md-4 { --span: 4; }
     .col-md-5 { --span: 5; }
     .col-md-6 { --span: 6; }
+    .col-md-7 { --span: 7; }
+    .col-md-8 { --span: 8; }
 }
 
 /* Desktop */
 @media (min-width: 960px) {
+        :root {
+        --container-max-width: 1024px;
+        --columns: 12;
+    }
     /* body { background-color: lightgreen; } */
     .col-lg-1 { --span: 1; }
     .col-lg-2 { --span: 2; }
@@ -73,4 +90,10 @@ largeur d'une colonne :
     .col-lg-4 { --span: 4; }
     .col-lg-5 { --span: 5; }
     .col-lg-6 { --span: 6; }
+    .col-lg-7 { --span: 7; }
+    .col-lg-8 { --span: 8; }
+    .col-lg-9 { --span: 9; }
+    .col-lg-10 { --span: 10; }
+    .col-lg-11 { --span: 11; }
+    .col-lg-12 { --span: 12; }
 }

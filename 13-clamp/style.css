@@ -1,0 +1,14 @@
+h1 {
+    /* font-size: 5vw; */
+    font-size: clamp(24px,6vw,72px)
+}
+
+.box {
+    border: 1px solid #888;
+    border-radius: 20px;
+    padding: 15px;
+    /* min-width: 250px;
+    max-width: 500px; */
+    /* width: clamp(250px, 100%,500px); */
+    margin: 0 auto;
+}
