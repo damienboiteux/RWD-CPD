@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkHub - Accueil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/burger-js.css">
+  <script src="js/menu.js" defer></script>
+  <script src="js/slider.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">WorkHub</a>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html" aria-current="page">Accueil</a></li>
+            <li><a href="espaces.html">Espaces</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="evenements.html">Événements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="header-actions-mobile">
+            <div class="auth-links-mobile">
+              <a href="auth.html#connexion" class="auth-link auth-link-with-icon"><span class="material-symbols-outlined" aria-hidden="true">login</span><span>Connexion</span></a>
+              <a href="auth.html#inscription" class="auth-link auth-link-with-icon btn btn-secondary"><span class="material-symbols-outlined" aria-hidden="true">person_add</span><span>Inscription</span></a>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Réserver une visite</a>
+          </div>
+        </nav>
+        <div class="header-actions">
+          <div class="auth-links">
+            <a href="auth.html#connexion" class="auth-link auth-link-with-icon"><span class="material-symbols-outlined" aria-hidden="true">login</span><span>Connexion</span></a>
+            <a href="auth.html#inscription" class="auth-link auth-link-with-icon btn btn-secondary"><span class="material-symbols-outlined" aria-hidden="true">person_add</span><span>Inscription</span></a>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Réserver une visite</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero hero-fullscreen">
+      <picture class="hero-media">
+        <source media="(min-width: 992px)" srcset="images/hero-large.svg 1400w, images/hero-medium.svg 900w" sizes="100vw">
+        <source media="(min-width: 640px)" srcset="images/hero-medium.svg 900w, images/hero-small.svg 600w" sizes="100vw">
+        <img src="images/hero-small.svg" srcset="images/hero-small.svg 600w, images/hero-medium.svg 900w, images/hero-large.svg 1400w" sizes="100vw" alt="Grand espace de coworking lumineux avec zones de travail et fauteuils" class="hero-image-fullscreen">
+      </picture>
+      <div class="hero-overlay"></div>
+      <div class="container hero-overlay-content">
+        <div class="hero-panel">
+          <p class="eyebrow eyebrow-light">Coworking moderne</p>
+          <h1>Travaillez, échangez et développez vos projets dans un lieu inspirant.</h1>
+          <p class="hero-text hero-text-light">Un hero plein écran avec texte superposé, image responsive via <code>srcset</code>, CTA clairs et contenus adaptés au mobile first.</p>
+          <ul class="hero-badges hero-badges-light">
+            <li>Open space</li>
+            <li>Bureaux privés</li>
+            <li>Accès 24/7</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="espaces.html" class="btn btn-primary">Découvrir les espaces</a>
+            <a href="auth.html#inscription" class="btn btn-secondary btn-secondary-light">Créer un compte</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Tout ce qu’il faut pour bien travailler</h2>
+          <p class="lead">Le site sert de base pédagogique pour travailler les images responsives, la typographie fluide, le slider, le menu burger et les formulaires.</p>
+        </div>
+        <div class="row features">
+          <div class="col col-12 col-sm-6 col-lg-3"><div class="feature-box"><h3>Wi-Fi rapide</h3><p>Connexion stable et rapide dans l’ensemble des espaces.</p></div></div>
+          <div class="col col-12 col-sm-6 col-lg-3"><div class="feature-box"><h3>Accès 24/7</h3><p>Travaillez au rythme qui vous convient.</p></div></div>
+          <div class="col col-12 col-sm-6 col-lg-3"><div class="feature-box"><h3>Salles équipées</h3><p>Écrans, visio, tableaux et mobilier confortable.</p></div></div>
+          <div class="col col-12 col-sm-6 col-lg-3"><div class="feature-box"><h3>Café illimité</h3><p>Des espaces détente pour faire une vraie pause.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Témoignages</p>
+          <h2>Un slider simple à compléter ou améliorer</h2>
+        </div>
+        <div class="slider" data-slider>
+          <div class="slider-track">
+            <article class="slide testimonial-card">
+              <blockquote>« L’espace est très agréable et la réservation des salles est simple. C’est idéal pour une équipe hybride. »</blockquote>
+              <p class="testimonial-meta">Camille — Product designer</p>
+            </article>
+            <article class="slide testimonial-card">
+              <blockquote>« Le lieu est lumineux, calme et le Wi-Fi est excellent. J’y travaille trois jours par semaine. »</blockquote>
+              <p class="testimonial-meta">Nassim — Développeur freelance</p>
+            </article>
+            <article class="slide testimonial-card">
+              <blockquote>« Les événements networking apportent une vraie valeur en plus. On rencontre facilement d’autres profils. »</blockquote>
+              <p class="testimonial-meta">Sophie — Fondatrice de startup</p>
+            </article>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-button" type="button" data-slider-prev aria-label="Témoignage précédent">←</button>
+            <button class="slider-button" type="button" data-slider-next aria-label="Témoignage suivant">→</button>
+          </div>
+          <div class="slider-dots" aria-label="Navigation du slider">
+            <button class="slider-dot is-active" type="button" data-slider-dot aria-label="Aller au témoignage 1"></button>
+            <button class="slider-dot" type="button" data-slider-dot aria-label="Aller au témoignage 2"></button>
+            <button class="slider-dot" type="button" data-slider-dot aria-label="Aller au témoignage 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Présentation</p>
+          <h2>Découvrez l’ambiance WorkHub</h2>
+        </div>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Présentation WorkHub" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <section class="footer-column">
+          <h2 class="footer-title">Coordonnées</h2>
+          <p>WorkHub</p>
+          <p>12 rue du Travail Collaboratif<br>75010 Paris</p>
+          <p><a href="tel:+33180000000">01 80 00 00 00</a><br><a href="mailto:bonjour@workhub.fr">bonjour@workhub.fr</a></p>
+        </section>
+        <section class="footer-column">
+          <h2 class="footer-title">Réseaux sociaux</h2>
+          <ul class="social-links">
+            <li><a href="#" class="social-link"><span class="material-symbols-outlined" aria-hidden="true">photo_camera</span><span>Instagram</span></a></li>
+            <li><a href="#" class="social-link"><span class="material-symbols-outlined" aria-hidden="true">groups</span><span>LinkedIn</span></a></li>
+            <li><a href="#" class="social-link"><span class="material-symbols-outlined" aria-hidden="true">smart_display</span><span>YouTube</span></a></li>
+          </ul>
+        </section>
+        <section class="footer-column">
+          <h2 class="footer-title">Newsletter</h2>
+          <form class="newsletter-form">
+            <label for="newsletter-email" class="sr-only">Votre adresse e-mail</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Votre adresse e-mail">
+            <button type="submit" class="btn btn-accent">S'inscrire</button>
+          </form>
+          <p class="footer-note">Recevez nos actualités, événements et nouveautés.</p>
+        </section>
+      </div>
+      <p class="footer-bottom">© 2026 WorkHub — Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>

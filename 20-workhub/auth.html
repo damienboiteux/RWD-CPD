@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkHub - Connexion / Inscription</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/burger-js.css">
+  <script src="js/menu.js" defer></script>
+  <script src="js/auth-tabs.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">WorkHub</a>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="espaces.html">Espaces</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="evenements.html">Événements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="header-actions-mobile">
+            <div class="auth-links-mobile">
+              <a href="auth.html#connexion" class="auth-link auth-link-with-icon"><span class="material-symbols-outlined" aria-hidden="true">login</span><span>Connexion</span></a>
+              <a href="auth.html#inscription" class="auth-link auth-link-with-icon btn btn-secondary"><span class="material-symbols-outlined" aria-hidden="true">person_add</span><span>Inscription</span></a>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Réserver une visite</a>
+          </div>
+        </nav>
+        <div class="header-actions">
+          <div class="auth-links">
+            <a href="auth.html#connexion" class="auth-link auth-link-with-icon"><span class="material-symbols-outlined" aria-hidden="true">login</span><span>Connexion</span></a>
+            <a href="auth.html#inscription" class="auth-link auth-link-with-icon btn btn-secondary"><span class="material-symbols-outlined" aria-hidden="true">person_add</span><span>Inscription</span></a>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Réserver une visite</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero section-alt">
+      <div class="container">
+        <p class="eyebrow">Compte membre</p>
+        <h1>Connexion et inscription sur une même page</h1>
+        <p class="lead page-hero-lead">La page présente deux formulaires et un système d’onglets simple à améliorer en cours.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container auth-layout">
+        <div class="auth-intro">
+          <h2>Rejoignez la communauté WorkHub</h2>
+          <p>Accédez aux réservations, aux événements et à votre espace membre. Le bloc de droite peut être reproduit en Figma comme un composant à deux états.</p>
+          <ul class="auth-benefits">
+            <li>Réserver vos espaces rapidement</li>
+            <li>Retrouver vos inscriptions aux événements</li>
+            <li>Gérer vos informations personnelles</li>
+          </ul>
+        </div>
+        <section class="auth-card" data-auth-tabs>
+          <div class="auth-tablist" role="tablist" aria-label="Connexion et inscription">
+            <button class="auth-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-connexion" id="tab-connexion" data-auth-target="connexion">Connexion</button>
+            <button class="auth-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-inscription" id="tab-inscription" data-auth-target="inscription">Inscription</button>
+          </div>
+
+          <div class="auth-panel is-active" id="panel-connexion" role="tabpanel" aria-labelledby="tab-connexion" data-auth-panel="connexion">
+            <h3>Vous possédez déjà un compte ?</h3>
+            <form class="contact-form">
+              <div class="form-group"><label for="login-email">Email</label><input type="email" id="login-email" name="login-email"></div>
+              <div class="form-group"><label for="login-password">Mot de passe</label><input type="password" id="login-password" name="login-password"></div>
+              <button type="submit" class="btn btn-primary">Se connecter</button>
+            </form>
+          </div>
+
+          <div class="auth-panel" id="panel-inscription" role="tabpanel" aria-labelledby="tab-inscription" data-auth-panel="inscription" hidden>
+            <h3>Créer un compte</h3>
+            <form class="contact-form">
+              <div class="form-group"><label for="signup-name">Nom complet</label><input type="text" id="signup-name" name="signup-name"></div>
+              <div class="form-group"><label for="signup-email">Email</label><input type="email" id="signup-email" name="signup-email"></div>
+              <div class="form-group"><label for="signup-password">Mot de passe</label><input type="password" id="signup-password" name="signup-password"></div>
+              <button type="submit" class="btn btn-primary">S'inscrire</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <section class="footer-column">
+          <h2 class="footer-title">Coordonnées</h2>
+          <p>WorkHub</p>
+          <p>12 rue du Travail Collaboratif<br>75010 Paris</p>
+          <p><a href="tel:+33180000000">01 80 00 00 00</a><br><a href="mailto:bonjour@workhub.fr">bonjour@workhub.fr</a></p>
+        </section>
+        <section class="footer-column">
+          <h2 class="footer-title">Réseaux sociaux</h2>
+          <ul class="social-links">
+            <li><a href="#" class="social-link"><span class="material-symbols-outlined" aria-hidden="true">photo_camera</span><span>Instagram</span></a></li>
+            <li><a href="#" class="social-link"><span class="material-symbols-outlined" aria-hidden="true">groups</span><span>LinkedIn</span></a></li>
+            <li><a href="#" class="social-link"><span class="material-symbols-outlined" aria-hidden="true">smart_display</span><span>YouTube</span></a></li>
+          </ul>
+        </section>
+        <section class="footer-column">
+          <h2 class="footer-title">Newsletter</h2>
+          <form class="newsletter-form">
+            <label for="newsletter-email" class="sr-only">Votre adresse e-mail</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Votre adresse e-mail">
+            <button type="submit" class="btn btn-accent">S'inscrire</button>
+          </form>
+          <p class="footer-note">Recevez nos actualités, événements et nouveautés.</p>
+        </section>
+      </div>
+      <p class="footer-bottom">© 2026 WorkHub — Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkHub - Espaces</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/burger-js.css">
+  <script src="js/menu.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">WorkHub</a>
+        <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="espaces.html" aria-current="page">Espaces</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="evenements.html">Événements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="header-actions-mobile">
+            <div class="auth-links-mobile">
+              <a href="auth.html#connexion" class="auth-link auth-link-with-icon"><span class="material-symbols-outlined" aria-hidden="true">login</span><span>Connexion</span></a>
+              <a href="auth.html#inscription" class="auth-link auth-link-with-icon btn btn-secondary"><span class="material-symbols-outlined" aria-hidden="true">person_add</span><span>Inscription</span></a>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Réserver une visite</a>
+          </div>
+        </nav>
+        <div class="header-actions">
+          <div class="auth-links">
+            <a href="auth.html#connexion" class="auth-link auth-link-with-icon"><span class="material-symbols-outlined" aria-hidden="true">login</span><span>Connexion</span></a>
+            <a href="auth.html#inscription" class="auth-link auth-link-with-icon btn btn-secondary"><span class="material-symbols-outlined" aria-hidden="true">person_add</span><span>Inscription</span></a>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Réserver une visite</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero section-alt">
+      <div class="container">
+        <p class="eyebrow">Nos espaces</p>
+        <h1>Des lieux adaptés à tous les usages</h1>
+        <p class="lead page-hero-lead">Une page idéale pour travailler la grille responsive, les cartes et l’usage des images adaptées aux différentes tailles d’écran.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="row cards-grid">
+          <div class="col col-12 col-sm-6 col-lg-4"><article class="card"><img src="images/open-space.svg" alt="Open space" class="card-image"><div class="card-body"><h3>Open space</h3><p>Un espace partagé lumineux pour travailler en toute flexibilité.</p></div></article></div>
+          <div class="col col-12 col-sm-6 col-lg-4"><article class="card"><img src="images/private-office.svg" alt="Bureau privé" class="card-image"><div class="card-body"><h3>Bureau privé</h3><p>Un bureau fermé pour davantage de calme et de confidentialité.</p></div></article></div>
+          <div class="col col-12 col-sm-6 col-lg-4"><article class="card"><img src="images/meeting-room.svg" alt="Salle de réunion" class="card-image"><div class="card-body"><h3>Salle de réunion</h3><p>Un espace équipé pour vos rendez-vous, réunions et ateliers.</p></div></article></div>
+          <div class="col col-12 col-sm-6 col-lg-4"><article class="card"><img src="images/lounge.svg" alt="Lounge" class="card-image"><div class="card-body"><h3>Lounge</h3><p>Un espace détente pour échanger et faire une pause.</p></div></article></div>
+          <div class="col col-12 col-sm-6 col-lg-4"><article class="card"><img src="images/visio-booth.svg" alt="Cabine visio" class="card-image"><div class="card-body"><h3>Cabine visio</h3><p>Des cabines isolées pour appels, visios et entretiens.</p></div></article></div>
+          <div class="col col-12 col-sm-6 col-lg-4"><article class="card"><img src="images/event-space.svg" alt="Espace événementiel" class="card-image"><div class="card-body"><h3>Espace événementiel</h3><p>Un grand volume pour conférences, meetups et formations.</p></div></article></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <section class="footer-column">
+          <h2 class="footer-title">Coordonnées</h2>
+          <p>WorkHub</p>
+          <p>12 rue du Travail Collaboratif<br>75010 Paris</p>
+          <p><a href="tel:+33180000000">01 80 00 00 00</a><br><a href="mailto:bonjour@workhub.fr">bonjour@workhub.fr</a></p>
+        </section>
+        <section class="footer-column">
+          <h2 class="footer-title">Réseaux sociaux</h2>
+          <ul class="social-links">
+            <li><a href="#" class="social-link"><span class="material-symbols-outlined" aria-hidden="true">photo_camera</span><span>Instagram</span></a></li>
+            <li><a href="#" class="social-link"><span class="material-symbols-outlined" aria-hidden="true">groups</span><span>LinkedIn</span></a></li>
+            <li><a href="#" class="social-link"><span class="material-symbols-outlined" aria-hidden="true">smart_display</span><span>YouTube</span></a></li>
+          </ul>
+        </section>
+        <section class="footer-column">
+          <h2 class="footer-title">Newsletter</h2>
+          <form class="newsletter-form">
+            <label for="newsletter-email" class="sr-only">Votre adresse e-mail</label>
+            <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Votre adresse e-mail">
+            <button type="submit" class="btn btn-accent">S'inscrire</button>
+          </form>
+          <p class="footer-note">Recevez nos actualités, événements et nouveautés.</p>
+        </section>
+      </div>
+      <p class="footer-bottom">© 2026 WorkHub — Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
